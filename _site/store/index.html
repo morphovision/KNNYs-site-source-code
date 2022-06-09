@@ -1,0 +1,41 @@
+<!--STORE-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>store</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+  </head>
+  <body class="">
+
+<!--NAVBAR-->
+<div id="nav">
+</div>
+<script>
+$(function(){
+  $("#nav").load("/nav.html");
+});
+</script>
+<!--NAV-->
+
+    <main class="">
+      
+      <!--STORE IFRAME-->
+
+      <div class="margin-nav border">
+        <div class="flex items-center rounded-terminal">
+          <p class="px-5 py-3 absolute rounded-terminal">⚪️ ⚪️ ⚪️</p>
+          <p class="px-5 py-3 max-width center rounded-terminal"> store </p>
+        </div>
+
+        <div class="border-b"></div>
+        
+        <div class="rounded-terminal">
+        <iframe src="https://knny.vercel.app" width="100%" height="1000px" border: 0px; class="scrollbar rounded-terminal";>
+        </iframe>
+      </div>
+    </main>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
