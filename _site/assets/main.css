@@ -9,9 +9,11 @@
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
+  background-color: black;
+  color:rgb(255, 255, 255);
+  color: white;
+  font-family: IBM plex mono;
 }
 
 ::before,
@@ -70,14 +72,28 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-size: xx-large
+}
+
+h2 {
+  font-size: x-large
+}
+
+h3 {
+  font-size: large;
+}
+
+h4 {
+  font-size:medium;
+}
+
+h5{
+  font-size: small;
+}
+
 h6 {
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: x-small ;
 }
 
 /*
@@ -460,11 +476,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .rounded {
-  border-radius: 0.25rem;
+  border-radius: .5em;
 }
-.border-b {
-  border-bottom-width: 1px;
-}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -538,3 +552,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.rounded-terminal {
+  border-radius: 20px;
+}
+
+.margin-nav {
+  margin: 2em;
+}
+
+.terminal-width {
+  width: 900px;
+}
+
+.border {
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.terminal-text {
+  width: 100%;
+  text-align: center;
+
+}
+
+.border-b {
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.blink {
+  animation: 1s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
