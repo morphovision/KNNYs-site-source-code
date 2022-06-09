@@ -34,6 +34,8 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
+  width: 100%;
+  height: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
 }
 
@@ -45,6 +47,8 @@ html {
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
+  height: 100%;
+  width: 100%;
 }
 
 /*
@@ -560,10 +564,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 2em;
 }
 
-.terminal-width {
-  width: 900px;
-}
-
 .border {
   border-color: white;
   border-width: 1px;
@@ -596,4 +596,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   100% {
     visibility: visible;
   }
+}
+
+.title {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.terminal-width{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+@media (max-width: 1200px) { .terminal-width {
+  margin-top: 0;
+
+}
+}
+
+.fullpage {
+  width: 100%;
+  height: 100%
+}
+
+.terminal {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.indent {
+  margin-left: 2em;
+}
+
+.no-border {
+  border-width: 0px;
+}
+
+.store-height {
+  height: 100%;
 }
