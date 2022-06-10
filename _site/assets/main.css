@@ -627,6 +627,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%
 }
 
+.pagepadding {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (max-width:1200) { .pagepadding
+  {
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
+
 .terminal {
   padding-left: 2em;
   padding-right: 2em;
@@ -657,14 +669,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto; 
   margin-right: auto;
 }
-@media (max-width: 1400px) {.whoami {
+@media (max-width: 1200px) {.whoami {
   position:relative; 
   width: 100%; 
   margin-left: auto; 
   margin-right: auto;
 }}
 
-@media (max-width: 1400px) {.store {
+@media (max-width: 1200px) {.store {
   position:relative; 
   width: 100%; 
   margin-left: auto; 
@@ -682,20 +694,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.row {
-  display:flex;
-}
-
-@media (max-width: 1400px) {.row {
-  flex-wrap: wrap;
-}
-}
-
-.column {
-  width: 50%;
-}
-
-@media (max-width: 1400px) {.column {
+@media (max-width: 1200) {.column {
   width: 100%
 }
 }
