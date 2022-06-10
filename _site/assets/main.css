@@ -630,12 +630,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pagepadding {
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 @media (max-width:1200) { .pagepadding
   {
     padding-left: .5em;
     padding-right: .5em;
+    padding-top: .5em;
   }
 }
 

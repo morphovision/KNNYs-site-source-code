@@ -32,7 +32,17 @@
       <div class="border wrapper terminal-width rounded" style="position: relative">
        <header class="flex items-center rounded-terminal">
          <h5 class="px-5 py-3 absolute rounded-terminal">⚪️ ⚪️ ⚪️</h5>
-         <div class="terminal-text rounded-terminal"><p class="px-5 py-3 rounded-terminal">knny.io</p></div>
+         <div class="terminal-text rounded-terminal">
+           <!--window title-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+          </script>
+          <script type="text/javascript">
+          $(function(){
+          $("#hometitle").load("/hometitle.html"); });
+          </script>
+          <div class="rounded-terminal" id="hometitle"></div>
+          <!--window title-->
+          </div>
        </header>
 
        <div class="border-b"></div>
