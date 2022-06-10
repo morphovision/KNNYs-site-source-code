@@ -77,27 +77,31 @@ Remove the default font size and weight for headings.
 */
 
 h1 {
-  font-size: xx-large
-}
-
-h2 {
   font-size: x-large
 }
 
+h2 {
+  font-size: large
+}
+
+p{
+  font-size: medium;
+}
+
 h3 {
-  font-size: large;
+  font-size: medium;
 }
 
 h4 {
-  font-size:medium;
+  font-size:small;
 }
 
 h5{
-  font-size: small;
+  font-size: x-small;
 }
 
 h6 {
-  font-size: x-small ;
+  font-size: xx-small ;
 }
 
 /*
