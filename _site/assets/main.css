@@ -635,13 +635,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .indent {
   margin-left: 2em;
 }
+.indent2 {
+  margin-left: 4em;
+}
+
 
 .no-border {
   border-width: 0px;
-}
-
-.store-height {
-  height: 100%;
 }
 
 .store {
@@ -651,9 +651,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.whoami{
+  position:relative; 
+  width: 60%; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+@media (max-width: 1200px) {.whoami {
+  position:relative; 
+  width: 100%; 
+  margin-left: auto; 
+  margin-right: auto;
+}}
+
 @media (max-width: 1200px) {.store {
   position:relative; 
   width: 100%; 
   margin-left: auto; 
   margin-right: auto;
 }}
+
+.fit-content{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.transparent-background {
+  background-color: transparent;
+}
+
+.row {
+  display:flex;
+}
+
+@media (max-width: 1200px) {.row {
+  flex-wrap: wrap;
+}
+}
+
+.column {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {.column {
+  width: 100%
+}
+}
