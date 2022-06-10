@@ -480,7 +480,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .rounded {
-  border-radius: .5em;
+  border-radius: 10px;
 }
 
 .bg-black {
@@ -643,3 +643,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .store-height {
   height: 100%;
 }
+
+.store {
+  position:relative; 
+  width: 85%; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+@media (max-width: 1200px) {.store {
+  position:relative; 
+  width: 100%; 
+  margin-left: auto; 
+  margin-right: auto;
+}}
