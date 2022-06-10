@@ -565,7 +565,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .border {
-  border-color: white;
+  border-color: #4c4c4c;
   border-width: 1px;
   border-style: solid;
 }
@@ -577,7 +577,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .border-b {
-  border-bottom-color: white;
+  border-bottom-color: rgb(0, 0, 0);
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
