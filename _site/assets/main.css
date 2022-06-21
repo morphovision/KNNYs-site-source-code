@@ -627,7 +627,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fullpage {
   width: 100%;
-  height: 100%
+  height: 90%
 }
 
 .pagepadding {
@@ -730,7 +730,7 @@ margin-right: auto
 footer {
   z-index: 10;
   bottom: 0;
-  position: fixed;
+  position:fixed;
   width: 100%;
   background-color: transparent;
 }
