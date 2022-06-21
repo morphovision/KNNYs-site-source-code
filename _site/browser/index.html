@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>knny.io</title>
+    <title>KNNY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+      
   </head>
   <body class="">
+
+
 
      <!--navbar-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
@@ -20,6 +24,7 @@
         <div class="nav" id="nav"></div>
      <!--navbar-->
 
+
      <!--dock-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script>
@@ -29,65 +34,72 @@
        </script>
        <div class="dock" id="dock"></div>
     <!--dock-->
+  <main class="fullpage items-center">
 
-   <main>
+
+
+   <main class="fullpage items-center">
+
+
 
     <!--terminal-->
     <div class="pagepadding fullpage">
-      <div class="border wrapper terminal-width rounded" style="position: relative">
+      <div class=" border wrapper terminal-width rounded" style="position: relative">
        <header class="flex items-center rounded-terminal">
          <h5 class="px-5 py-3 absolute rounded-terminal">⚪️ ⚪️ ⚪️</h5>
-         <div class="terminal-text items-center flex fit-content rounded-terminal">
-         <br>
-         <br>
+         <div class="terminal-text rounded-terminal">
+           <br>
+           <br>
           </div>
        </header>
 
+
        <div class="p-terminal rounded-terminal"></div>
        
-         
-       
-       
-       
-       <div class="row">
-        <div class="margin-nav column">
-          <h1>Yooooo, I'm KNNY, an artist and amateur dev.</h1>
-          <br>
-          <p>My work mostly deals with topics around the self and enlightenment. My most recent series titled “Light Beings” features materialized consciousness as someone who is looking for the all-encompassing purpose of life while entering different dimensions of reality. I mix this light being philosophy with 3D buildings and code - it's hard to describe what I do unless you see it.</p>
-          <br>
-          <br>
-          <div class="border rounded pagepadding">
-            <p>Below is the dock with a <a href="/browser">browser which hosts a bunch of links to my artwork/collabs/buildings in the metaverse</a>, my <a href="/store">self-deployed NFT store</a>, a <a href="/gallery">gallery</a> and other cool shit. Make yourself at home. 🔥</p>
-          </div>
-          
+       <div class="margin-nav">
+        <a href="/store" rel="history">
+          <div class="flex border px-5 py-3 rounded margin-bottom">
+           <h2>> store</h2>
+        </div>
+        </a>
+        
+        <p class="indent">Decentralized, open-source NFT MarketPlace, specifically for KNNY's work.</p>
+        <p class="indent"><a href="https://github.com/kennyflaten/KNNY-Market-v4" rel="history">> store source code</a></p>
+        <p class="indent"><a href="https://github.com/kennyflaten/minimal-11ty-tailwind-starter" rel="history">> this site's source code</a></p>
+        
+        <a href="/otherstores" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> other stores</h2></a>
 
-         </div>
-         
-         
-         </div>
+        
+        
+       <a href="/" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> who am I</h2></a>
 
+        
+        <a href="/metaverse" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> metaverse</h2></a>
 
+        
+        
+        <a href="/dropscollabs" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> drops + collabs</h2></a>
 
+        
+        
+        <a href="https://twitter.com/0xKNNY" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> twitter</h2></a>
 
-
-
-
-
-
-
+        
+        
+        <a href="https://discord.gg/kqFz3qFPhp" rel="history"><h2 class="border px-5 py-3 rounded margin-top margin-bottom">> discord</h2></a>
 
         </div>
-      </div>
-        <!--end of terminal-->
-
+        </div>
 
 
         <!--draggable javascript-->
         <script>
           const wrapper=document.querySelector(".wrapper"),header=wrapper.querySelector("header");function onDrag({movementX:e,movementY:r}){let t=window.getComputedStyle(wrapper),a=parseInt(t.left),o=parseInt(t.top);wrapper.style.left=`${a+e}px`,wrapper.style.top=`${o+r}px`}header.addEventListener("mousedown",()=>{header.classList.add("active"),header.addEventListener("mousemove",onDrag)}),document.addEventListener("mouseup",()=>{header.classList.remove("active"),header.removeEventListener("mousemove",onDrag)});
-        </script>
+    </script>
   
         <!--draggable javascript-->
+      </div>
+        <!--end of terminal-->
    </main>
   </body>
 </html>

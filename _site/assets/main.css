@@ -726,3 +726,31 @@ margin-right: auto
   padding-top: .5em;
   padding-bottom: .5em;
 }
+
+footer {
+  z-index: 10;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navbar {
+  top: 0;
+  position: relative;
+  width: 100%;
+}
+
+.icons {
+  margin: .3em;
+}
+
+.right {
+  margin-left: auto;
+}
+
+/* @media (max-width: 768px) { .mobile {
+  display:none;
+}
+} 
+*/
