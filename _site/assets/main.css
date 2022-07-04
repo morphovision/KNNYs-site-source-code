@@ -749,6 +749,11 @@ footer {
   margin-left: auto;
 }
 
+.wojak {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* @media (max-width: 768px) { .mobile {
   display:none;
 }

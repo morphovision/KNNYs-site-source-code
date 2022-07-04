@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>wojak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+      
+  </head>
+  <body class="">
+
+
+
+     <!--navbar-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+     </script>
+      <script type="text/javascript">
+      $(function(){
+      $("#nav").load("/nav.html"); });
+        </script>
+        <div class="nav" id="nav"></div>
+     <!--navbar-->
+
+          <!--dock-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+          </script>
+           <script type="text/javascript">
+           $(function(){
+           $("#dock").load("/dock.html"); });
+             </script>
+             <div class="dock" id="dock"></div>
+          <!--dock-->
+
+          
+   <main class="fullpage items-center">
+
+
+
+    <!--terminal-->
+    <div class="pagepadding fullpage">
+      <div class="border wrapper terminal-width rounded" style="position: relative">
+       <header class="flex items-center rounded-terminal">
+         <h5 class="px-5 py-3 absolute rounded-terminal">⚪️ ⚪️ ⚪️</h5>
+         <div class="terminal-text items-center flex fit-content rounded-terminal">
+           <!--window title-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+          </script>
+          <script type="text/javascript">
+          $(function(){
+          $("#windowtitle").load("/windowtitle.html"); });
+          </script>
+          <div class="rounded-terminal" id="windowtitle"></div>
+          <!--window title-->
+          </div>
+       </header>
+       <div class="p-terminal rounded-terminal"></div>
+       <div class="margin-nav">
+         
+
+
+
+
+
+
+        
+        <!--stores-->
+          <div><img class="wojak" src="/img/wojak.gif"></div>
+        <!--stores-->
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+        <!--draggable javascript-->
+        <script>
+          const wrapper=document.querySelector(".wrapper"),header=wrapper.querySelector("header");function onDrag({movementX:e,movementY:r}){let t=window.getComputedStyle(wrapper),a=parseInt(t.left),o=parseInt(t.top);wrapper.style.left=`${a+e}px`,wrapper.style.top=`${o+r}px`}header.addEventListener("mousedown",()=>{header.classList.add("active"),header.addEventListener("mousemove",onDrag)}),document.addEventListener("mouseup",()=>{header.classList.remove("active"),header.removeEventListener("mousemove",onDrag)});
+        </script>
+        <!--draggable javascript-->
+      </div>
+        <!--end of terminal-->
+   </main>
+  </body>
+</html>
