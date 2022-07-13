@@ -7,8 +7,12 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+
   </head>
   <body class="">
+
+    <div style="position: fixed;" id='fa'></div>
 
      <!--navbar-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
@@ -19,39 +23,42 @@
         </script>
         <div class="nav" id="nav"></div>
      <!--navbar-->
-
+     <div id='fa'></div>
      <!--dock-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script>
-     <script type="text/javascript">f
+     <script type="text/javascript">
      $(function(){
      $("#dock").load("/dock.html"); });
        </script>
        <div class="dock" id="dock"></div>
     <!--dock-->
 
+  
+    <p style="opacity: 0;" id='face'>💎</p>
+    <p style="opacity: 0;" id='fsize'>30</p>
+
    <main>
-<div class=" margin-nav">
+<div class="margin-nav">
 <div class="column">
     <div style="margin-top: .5em;" class="">
       <div class=" wrapper terminal-width rounded">
         
     <div class="row">
       <div class="margin-nav">
-        <h1 class="text-color">Welcome to KNNY's magical site 🪄</h1>
+        <h1 class="text-color">Welcome to KNNY's magical site <button id='btn' class='myButton'>💎</button></h1>
         <br>
-        <p>Hi, I'm KNNY, an artist and a somewhat front-end dev. My work mostly deals with topics around the self and enlightenment. My most recent series titled “Light Beings” features materialized consciousness as someone who is looking for the all-encompassing purpose of life while entering different dimensions of reality. I mix this light being philosophy with 3D buildings and code - it's hard to describe what I do unless you see it.</p>
+        <p class="grey"><span style="color:white;">Hi, I'm KNNY, an artist and a somewhat front-end dev.</span> My work mostly deals with topics around the self and enlightenment. My most recent series titled “Light Beings” features materialized consciousness as someone who is looking for the all-encompassing purpose of life while entering different dimensions of reality. I mix this light being philosophy with 3D buildings and code - it's hard to describe what I do unless you see it.</p>
         <br>
-        <p class="">Below is the navigation which hosts a bunch of links to my artwork/collabs/buildings in the metaverse, my <a href="/store">self-deployed NFT store</a>, a <a href="/gallery">gallery</a> and other cool shit. <br> <br> Make yourself at home. 🔥</p>
-
+        <p class="grey">Below is the navigation which hosts a bunch of links to my artwork/collabs/buildings in the metaverse, my <a href="/store">self-deployed NFT store</a>, a <a href="/gallery">gallery</a> and other cool shit. <br> <br> Make yourself at home.</p>
         <br>
         <div class="flex">
-          <a style="margin-right:.5em;" href="https://discord.gg/kqFz3qFPhp" rel="history"><img style="width: 24px; color:white;" src="/img/discord.svg"></a>
-          <a style="margin-right:.5em;" href="https://twitter.com/0xKNNY" rel="history"><img style="width: 24px; color:white;" src="/img/twitter.svg"></a>
-          <a style="margin-right:.5em;" href="https://github.com/kennyflaten" rel="history"><img style="width: 24px; color:white;" src="/img/github.svg"></a>
-          <a style="margin-right:.5em;" href="mailto:kennyflaten@proton.me" rel="history"><img style="width: 24px; color:white;" src="/img/mail.svg"></a>
-          <a style="margin-right:.5em;" href="/donate" rel="history"><img style="width: 24px; color:white;" src="/img/monero.svg"></a>
-          <a style="margin-right:.5em;" href="/donate" rel="history"><img style="width: 24px; color:white;" src="/img/eth.svg"></a>
+          <a style="margin-right:.5em;" href="https://discord.gg/kqFz3qFPhp" rel="history">     <img class="text-color" style="width: 24px; opacity: 1;" src="/img/discord.svg"></a>
+          <a style="margin-right:.5em;" href="https://twitter.com/0xKNNY" rel="history">        <img class="text-color" style="width: 24px; opacity: 1;" src="/img/twitter.svg"></a>
+          <a style="margin-right:.5em;" href="https://github.com/kennyflaten" rel="history">    <img class="text-color" style="width: 24px; opacity: 1;" src="/img/github.svg"></a>
+          <a style="margin-right:.5em;" href="mailto:kennyflaten@proton.me" rel="history">      <img class="text-color" style="width: 24px; opacity: 1;" src="/img/mail.svg"></a>
+          <a style="margin-right:.5em;" href="/donate" rel="history">                           <img class="text-color" style="width: 24px; opacity: 1;" src="/img/monero.svg"></a>
+          <a style="margin-right:.5em;" href="/donate" rel="history">                           <img class="text-color" style="width: 24px; opacity: 1;" src="/img/eth.svg"></a>
 
 
         </div>
@@ -69,25 +76,20 @@
      
        
        <div class="margin-nav">
-        <a href="/store" rel="history">
-          <div class="flex border px-5 py-3 rounded margin-bottom">
-           <h3 class="text-color">> NFT store</h3>
+        <a href="/store" rel="history">             <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> NFT store        </h3></a>
+        
+        <div class="indent">
+          <p class="grey">Decentralized, open-source NFT marketplace, specifically for KNNY's work.</p>
+          <p class="grey"><a href="https://github.com/kennyflaten/KNNY-Market-v4" rel="history">> store source code</a></p>
+          <p class="grey"><a href="https://github.com/kennyflaten/minimal-11ty-tailwind-starter" rel="history">> this site's source code</a></p>
         </div>
-        </a>
-        
-        <p class=" indent">Decentralized, open-source NFT marketplace, specifically for KNNY's work.</p>
-        <p class=" indent"><a href="https://github.com/kennyflaten/KNNY-Market-v4" rel="history">> store source code</a></p>
-        <p class=" indent"><a href="https://github.com/kennyflaten/minimal-11ty-tailwind-starter" rel="history">> this site's source code</a></p>
-        
-        <a href="/otherstores" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> other stores</h3></a>
 
-        
-        
-        <a href="/metaverse" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> metaverse</h3></a>
-        <a href="/dropscollabs" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> drops + collabs</h3></a>
-        <a href="/gallery" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> gallery</h3></a>
-        <a href="/spotify" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> my spotify music</h3></a>
-        <a href="/wojak" rel="history"><h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom">> wojak.gif</h3></a>
+        <a href="/otherstores" rel="history">       <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> other stores     </h3></a>
+        <a href="/metaverse" rel="history">         <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> metaverse        </h3></a>
+        <a href="/dropscollabs" rel="history">      <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> drops + collabs  </h3></a>
+        <a href="/gallery" rel="history">           <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> gallery          </h3></a>
+        <a href="/spotify" rel="history">           <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> my spotify music </h3></a>
+        <a href="/wojak" rel="history">             <h3 class="text-color border px-5 py-3 rounded margin-top margin-bottom"><span class="grey">></span> wojak.gif        </h3></a>
 
         </div>
         </div>
@@ -115,7 +117,7 @@
 
 
 
-         <div class=""><img class="img50 rounded border" src="/img/9.jpg"></div> 
+         <a href="https://makersplace.com/knny/nevermore-1-of-1-185835/"> <div class=""><img class="img50 rounded border" src="/img/9.jpg"></div> </a>
 
          <!--<div class=""><video autoplay loop controls class="img50 rounded border" src="https://arweave.net/ihcVkuWKMqWfzWdRmvX3RMkJVkKgfplF0JLx_fTEQLc"></div> -->
 
@@ -124,11 +126,7 @@
       </div>
         <!--end of terminal-->
     </div>
-
-
-
-
-
    </main>
+   <script src="/assets/explosion.js"></script>
   </body>
 </html>

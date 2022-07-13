@@ -180,7 +180,17 @@ table {
 3. Remove default padding in all browsers.
 */
 
-button,
+button {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+  border: none;
+
+}
+
 input,
 optgroup,
 select,
@@ -374,7 +384,6 @@ Make sure disabled buttons don't get the pointer cursor.
 */
 
 img,
-svg,
 video,
 canvas,
 audio,
@@ -564,7 +573,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .margin-nav {
-  margin: 1.2em;
+  margin: 1em;
 }
 
 .border {
@@ -767,6 +776,12 @@ footer {
 .text-color {
   color: #ffffff;
 }
+
+.grey {
+  color: rgb(92, 92, 92);
+}
+
+
 /* @media (max-width: 768px) { .mobile {
   display:none;
 }
