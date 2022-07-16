@@ -15,6 +15,9 @@
   color: rgb(255, 255, 255);
 }
 
+.background {
+  background-color: rgb(12,12,12);
+}
 ::before,
 ::after {
   --tw-content: '';
@@ -76,7 +79,7 @@ Remove the default font size and weight for headings.
 */
 
 h1 {
-  font-size: xx-large
+  font-size: xxx-large
 }
 
 h2 {
@@ -582,6 +585,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: solid;
 }
 
+a :hover {
+  border-color: rgb(255, 255, 255);
+  border-width: 1px;
+  color: white;
+}
+
+.grey :hover {
+  color: white;
+}
+
+
 .terminal-text {
   width: 100%;
   text-align: right;
@@ -779,6 +793,29 @@ footer {
 
 .grey {
   color: rgb(92, 92, 92);
+}
+
+.contact {
+  flex-direction: column;
+  display:flex;
+  max-width: 900px;
+}
+
+
+@media (min-width: 900px) { .contact {
+  height: fit-content;
+  flex-direction: row;
+
+}
+}
+
+@media (min-width: 900px) { .contactbutton {
+  width:fit-content;
+}
+}
+
+.contactbutton {
+  width:100%;
 }
 
 

@@ -1,4 +1,4 @@
-# KNNY.io
+# knny.io
 
 ![screenshot](/_site/img/screenshot.png)
 

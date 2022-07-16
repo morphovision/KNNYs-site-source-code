@@ -11,7 +11,7 @@
       
   </head>
   <body class="">
-
+    <div style="position: fixed;" id='fa'></div>
 
 
      <!--navbar-->
@@ -45,9 +45,10 @@
 
     <div class="row terminal-width">
       <div class="margin-nav">
-        <h1 class="text-color">Drops + Collabs 🔪</h1>
-        <br>
-        <p class="grey">These are all the drops and collabs that I have in the NFT space. If you're interested in collabing, just reach out to me on Twitter at <a href="https://twitter.com/0xKNNY"><span>twitter.com/0xKNNY</span> or.</a></p>
+        <div class="flex-wrap"><h1 class="text-color">Drops + Collabs <button id='btn' class='myButton'>🔪</button></h1>
+          <p>[click the knife]</p>
+          <br>
+        <p class="grey">These are all the drops and collabs that I have in the NFT space. If you're interested in collabing, just reach out to me on Twitter at <a href="https://twitter.com/0xKNNY"><span>twitter.com/0xKNNY</span></a>.</p>
         </div>
         </div>
       </div>
@@ -57,7 +58,7 @@
 
     <!--terminal-->
     <div class="pagepadding fullpage">
-      <div class="border wrapper terminal-width rounded" style="position: relative">
+      <div style="background-color: transparent;" class="border wrapper terminal-width rounded" style="position: relative">
        <div class="p-terminal rounded-terminal"></div>
        <div class="margin-nav">
          
@@ -125,6 +126,95 @@
           
         </div>
         <!--end of terminal-->
+
+        <p style="background-color: transparent; color: transparent" id='face'>🔪</p>
+        <p style="background-color: transparent; color: transparent" id='fsize'>40</p>
+        <script>
+          var flyingMen = [];
+
+var text = document.getElementById("face");
+var button = document.getElementById('btn');
+var fsize = document.getElementById("fsize");
+text.value = "🔪";
+fsize.value = "40";
+//emoji object
+  function emoji(face, startx, starty, flour, fs, flyUpMax) {
+    this.isAlive = true;
+    this.face = face;
+    this.x = startx;
+    this.y = starty;
+    this.flourLevel = flour;
+    this.increment = -Math.floor((Math.random()*flyUpMax)+10);
+    this.xincrement = Math.floor((Math.random()*10)+1);
+    this.xincrement *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+    this.element = document.createElement('div');
+    this.element.innerHTML = face;
+    this.element.style.position = "absolute";
+    this.element.style.fontSize = fs + "px";
+    this.element.style.color = "white";
+    document.getElementById("fa").appendChild(this.element);
+
+    this.refresh = function(){
+      if (this.isAlive) {
+        //------Y axis-----
+        
+        
+        
+        
+        this.y += this.increment;
+        this.x += this.xincrement;
+        this.increment += .75;
+        
+        if (this.y >= this.flourLevel) {
+          if (this.increment <=1) {
+            this.isAlive = false;
+          }
+         this.increment = 15;
+        }
+        
+        this.element.style.transform = "translate(" + this.x + "px, " + this.y + "px)";
+      } else {
+        this.element.style.transform = "translate(px, px)";
+      }
+    }
+    
+  }
+
+
+
+button.addEventListener("click", goB);
+
+
+function goB() {
+  var fontsize = fsize.value;
+  var xv = (button.getBoundingClientRect().left + button.clientWidth/2) - (fontsize/2);
+  var yv = (button.getBoundingClientRect().top + button.clientHeight/2) - (fontsize/2);
+  var fl = button.getBoundingClientRect().top + 10000;
+  var face = text.value;
+  for (var i = 0; i < 8; i++) {
+    var coolGuy = new emoji(face, xv, yv, fl, fontsize, 12);
+    flyingMen.push(coolGuy);
+  }
+
+}
+
+
+
+//Rendering
+function render() {
+  for (var i = 0; i < flyingMen.length; i++) {
+    if (flyingMen[i].isAlive == true) {
+      flyingMen[i].refresh();
+    } else {
+      flyingMen[i].element.remove();
+      flyingMen.splice(i, 1);
+    }
+  }
+  requestAnimationFrame(render);
+}
+
+render();
+        </script>
    </main>
   </body>
 </html>
