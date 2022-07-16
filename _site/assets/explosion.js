@@ -4,7 +4,7 @@ var text = document.getElementById("face");
 var button = document.getElementById('btn');
 var fsize = document.getElementById("fsize");
 text.value = "💎";
-fsize.value = "24";
+fsize.value = "40";
 //emoji object
   function emoji(face, startx, starty, flour, fs, flyUpMax) {
     this.isAlive = true;
@@ -31,7 +31,7 @@ fsize.value = "24";
         
         this.y += this.increment;
         this.x += this.xincrement;
-        this.increment += 0.25;
+        this.increment += .75;
         
         if (this.y >= this.flourLevel) {
           if (this.increment <=1) {
@@ -57,9 +57,9 @@ function goB() {
   var fontsize = fsize.value;
   var xv = (button.getBoundingClientRect().left + button.clientWidth/2) - (fontsize/2);
   var yv = (button.getBoundingClientRect().top + button.clientHeight/2) - (fontsize/2);
-  var fl = button.getBoundingClientRect().top + 100;
+  var fl = button.getBoundingClientRect().top + 10000;
   var face = text.value;
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 8; i++) {
     var coolGuy = new emoji(face, xv, yv, fl, fontsize, 12);
     flyingMen.push(coolGuy);
   }
