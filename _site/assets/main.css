@@ -23,7 +23,7 @@ html {
 }
 
 .background {
-  background-color: rgb(12,12,12);
+  background-color: transparent;
 }
 ::before,
 ::after {
