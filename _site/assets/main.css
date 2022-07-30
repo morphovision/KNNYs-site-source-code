@@ -22,7 +22,7 @@ module.exports = {
   border-color: #e5e7eb; /* 2 */
   background: url(https://i.postimg.cc/MHXC2WD5/fibonaccicd3ddd-2.jpg);
   background-repeat: no-repeat;
-  background-size: contain, cover;
+  background-size: 75% 50%;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
