@@ -20,9 +20,7 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background: url(https://i.postimg.cc/MHXC2WD5/fibonaccicd3ddd-2.jpg);
-  background-repeat: no-repeat;
-  background-size: 75% 50%;
+  background-color: #121212;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
