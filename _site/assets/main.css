@@ -22,7 +22,7 @@ module.exports = {
   border-color: #e5e7eb; /* 2 */
   background: url(https://pbs.twimg.com/media/FYrk7PNXoAIcTBW?format=jpg&name=4096x4096);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100% 100%;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
