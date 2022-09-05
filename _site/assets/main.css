@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'footer-texture': "url('https://pbs.twimg.com/media/Fb2uUjXXkAEOmka?format=jpg&name=medium')",
+       
+        'hero-pattern': "url('../img/backkground.png')",
       }
     }
   }
@@ -19,13 +20,13 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background-image: "url('/morphovision/KNNYs-site-source-code/_site/img/backkground.png')";
+  background-color: #121212;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
 
 .background {
-  background-image: "url('/img/backkground.png')";
+  background-color: transparent;
 }
 ::before,
 ::after {
