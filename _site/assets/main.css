@@ -9,8 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/img/774d777.png')",
+        'footer-texture': "url('/img/backkground.png')",
       }
     }
   }
