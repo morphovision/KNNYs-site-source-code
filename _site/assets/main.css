@@ -8,9 +8,9 @@
 module.exports = {
   theme: {
     extend: {
-      backgroundImage: {
-       
-        'hero-pattern': "url('../img/backkground.png')",
+      backgroundImage: (theme) => {
+        'hero-lg': "url('../img/backkground.png')",
+        'hero-sm': "url('../img/backkground.png')",
       }
     }
   }
