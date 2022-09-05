@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "bg-[image:url('backkground.PNG')]",
-        'footer-texture': "url('/img/774d777.png')",
+        'footer-texture': "url(image:url('backkground.PNG')",
       }
     }
   }
