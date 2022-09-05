@@ -20,7 +20,7 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  background-image: url('https://cdn.pixabay.com/photo/2014/04/05/11/39/rain-316580_960_720.jpg');
   background-size: contain;
   [width:2000px]
   font-family: 'Poppins';
