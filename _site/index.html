@@ -33,25 +33,25 @@
        <div class="dock" id="dock"></div>
     <!--dock-->
 
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <div class="flex min-h-screen w-full flex-wrap content-center justify-center bg-gray-200">
+      <div x-data="{open: false}">
+        <button class="rounded-md bg-blue-600 px-2 py-1 text-white" x-on:click="open = !open">Hello 🔊</button>
+        <div class="relative top-5 w-60 bg-white p-5" x-show="open">
+          <div class="absolute -top-2.5 left-7 h-5 w-5 rotate-45 bg-white"></div>
+    
+          Hiii! 😃✋
+        </div>
+        <div></div>
+      </div>
+    </div>
+
    <main>
 <div class="margin-nav">
 <div class="column">
     <div style="margin-top: .5em;" class="">
       <div style="background-color: #9c0909;" class=" wrapper terminal-width">
-
-        <script src="//unpkg.com/alpinejs" defer></script>
-
-<div class="flex min-h-screen w-full flex-wrap content-center justify-center bg-gray-200">
-  <div x-data="{open: false}">
-    <button class="rounded-md bg-blue-600 px-2 py-1 text-white" x-on:click="open = !open">Hello 🔊</button>
-    <div class="relative top-5 w-60 bg-white p-5" x-show="open">
-      <div class="absolute -top-2.5 left-7 h-5 w-5 rotate-45 bg-white"></div>
-
-      Hiii! 😃✋
-    </div>
-    <div></div>
-  </div>
-</div>
         
 
            <!--terminal-->
