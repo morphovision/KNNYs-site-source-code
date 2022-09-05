@@ -25,7 +25,7 @@ module.exports = {
 }
 
 .background {
-  background-image: "url('/img/backkground.png')";
+  background-image: </img/backkground.png>;
 }
 ::before,
 ::after {
