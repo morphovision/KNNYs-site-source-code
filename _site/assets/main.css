@@ -20,7 +20,7 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background-color: <div class="bg-[url('/img/backkground.PNG')]">;
+  background-image; "bg-[url('/img/backkground.PNG')]";
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
