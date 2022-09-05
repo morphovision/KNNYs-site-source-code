@@ -27,7 +27,7 @@ module.exports = {
 }
 
 .background {
-  background-image: url('/img/hero-pattern.svg') 
+  background-image: url(https://cdn.pixabay.com/photo/2022/03/05/08/30/black-7048635_960_720.jpg') 
 }
 ::before,
 ::after {
