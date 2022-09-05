@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'footer-texture': "url('/img/backkground.png')",
+        'footer-texture': "url('https://pbs.twimg.com/media/Fb2uUjXXkAEOmka?format=jpg&name=medium')",
       }
     }
   }
@@ -25,7 +25,7 @@ module.exports = {
 }
 
 .background {
-  background-image: </img/backkground.png>;
+  background-image: "url('/img/backkground.png')";
 }
 ::before,
 ::after {
