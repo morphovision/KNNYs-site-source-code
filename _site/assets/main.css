@@ -26,7 +26,7 @@ module.exports = {
 }
 
 .background {
-  background-image: url 
+  background-color: rgb(8,8,8)
 }
 ::before,
 ::after {
