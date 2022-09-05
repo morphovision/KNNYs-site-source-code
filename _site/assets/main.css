@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-pattern': "url('/img/backkground.png')",
-        'footer-texture': "url('/img/backkground.png')",
+        'hero-pattern': "url('../img/backkground.png')",
+        'footer-texture': "url('../img/backkground.png')",
        })
      }
    }
@@ -20,7 +20,7 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background-color: #121212;
+  background-color: transparent;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
