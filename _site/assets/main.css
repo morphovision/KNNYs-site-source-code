@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => {
-        'hero-lg': "url('../img/backkground.png')",
-        'hero-sm': "url('../img/backkground.png')",
-      }
+        'hero-lg': "url('../morphovision/KNNYs-site-source-code/_site/img/backkground.png')",
+        'hero-sm': "url('../morphovision/KNNYs-site-source-code/_site/img/backkground.png')",
+      },
     }
   }
 }                                
