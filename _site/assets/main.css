@@ -387,7 +387,7 @@ button,
 Make sure disabled buttons don't get the pointer cursor.
 */
 :disabled {
-  cursor: crosshair;
+  cursor: not-allowed;
 }
 
 /*
