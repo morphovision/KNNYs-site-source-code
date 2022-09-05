@@ -8,9 +8,8 @@
 module.exports = {
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'hero-pattern': "url('../img/backkground.png')",
-        'footer-texture': "url('../img/backkground.png')",
+      backgroundImage: {
+       'custom-background-image-name': "url('/img/backkground.png')",
        })
      }
    }
@@ -20,7 +19,7 @@ module.exports = {
 ::after {
   box-sizing: border-box; /* 1 */
   border-color: #e5e7eb; /* 2 */
-  background-image: "url('https://f8n-ipfs-production.imgix.net/QmPKKkNRNffnMqusNpriSWdxCNUSXXycjFjP39qfHpLNo8/nft.png?q=80&auto=format%2Ccompress&cs=srgb&max-w=1680&max-h=1680')";
+  background-image: #121212;
   font-family: 'Poppins';
   color: rgb(255, 255, 255);
 }
