@@ -8,12 +8,12 @@
 module.exports = {
   theme: {
     extend: {
-      backgroundImage: (theme) => {
-        'hero-lg': "url('../morphovision/KNNYs-site-source-code/_site/img/backkground.png')",
-        'hero-sm': "url('../morphovision/KNNYs-site-source-code/_site/img/backkground.png')",
-      },
-    }
-  }
+      backgroundImage: theme => ({
+        'hero-pattern': "url('/img/backkground.png')",
+        'footer-texture': "url('/img/backkground.png')",
+       })
+     }
+   }
 }                                
 *,
 ::before,
