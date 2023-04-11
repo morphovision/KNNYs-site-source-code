@@ -62,27 +62,7 @@
       </div>
         <!--end of terminal-->
 
-var text = document.getElementById("face");
-var button = document.getElementById('btn');
-var fsize = document.getElementById("fsize");
-text.value = "🖼";
-fsize.value = "40";
-
-
-//Rendering
-function render() {
-  for (var i = 0; i < flyingMen.length; i++) {
-    if (flyingMen[i].isAlive == true) {
-      flyingMen[i].refresh();
-    } else {
-      flyingMen[i].element.remove();
-      flyingMen.splice(i, 1);
-    }
-  }
-  requestAnimationFrame(render);
-}
-
-render();
+        
         </script>
    </main>
   </body>
