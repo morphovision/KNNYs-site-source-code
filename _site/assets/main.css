@@ -599,7 +599,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 a :hover {
   border-color: rgb(255, 255, 255);
   border-width: 1px;
-  color: rgb(246, 255, 0);
+  color: rgb(238, 238, 238);
 }
 
 .grey :hover {
@@ -614,7 +614,7 @@ a :hover {
 }
 
 .border-b {
-  border-color: #373737;
+  border-color: #f2ff00;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
