@@ -592,7 +592,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border {
   border-color: #c8ff00;
-  border-width: 0,5px;
+  border-width: 0.5px;
   border-style: solid;
 }
 
