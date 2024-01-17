@@ -40,40 +40,6 @@ module.exports = {
   3. Use a more readable tab size.
   4. Use the user's configured `sans` font-family by default.
   */
-
-  /* styles.css */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.folder-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.folder {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 1rem;
-    text-align: center;
-}
-
-.folder img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-.folder p {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-}
-
   
   html {
     line-height: 1.5; /* 1 */
