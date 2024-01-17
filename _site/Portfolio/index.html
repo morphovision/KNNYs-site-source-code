@@ -18,6 +18,39 @@
         <div class="nav" id="nav"></div>
      <!--navbar-->
 
+    </head>
+    <body class="bg-gray-200 p-8">
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="folder" onclick="abrirCarpeta('https://example.com/carpeta1')">
+            <img src="https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/512/Folder.png" alt="Icono de carpeta" class="mx-auto mb-2 w-12 h-12">
+            <p class="text-center">Carpeta 1</p>
+        </div>
+    
+        <div class="folder" onclick="abrirCarpeta('https://example.com/carpeta2')">
+            <img src="https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/512/Folder.png" alt="Icono de carpeta" class="mx-auto mb-2 w-12 h-12">
+            <p class="text-center">Carpeta 2</p>
+        </div>
+    
+        <div class="folder" onclick="abrirCarpeta('https://example.com/carpeta3')">
+            <img src="https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/512/Folder.png" alt="Icono de carpeta" class="mx-auto mb-2 w-12 h-12">
+            <p class="text-center">Carpeta 3</p>
+        </div>
+    
+        <!-- Agrega más carpetas según sea necesario -->
+    
+    </div>
+    
+    <script>
+        function abrirCarpeta(url) {
+            // Redirige al iframe
+            window.location.href = url;
+        }
+    </script>
+    
+    </body>
+    </html>
+
 
 </head>
 <body class="bg-gray-200 p-8">
