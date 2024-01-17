@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Configuración de colores de fondo y margen general */
+body {
+    background-color: #000000;
+    margin: 2rem;
+}
+
+/* Estilo de las carpetas */
+.folder {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilo de los íconos */
+.folder img {
+    width: 30px; /* Puedes ajustar el tamaño según tus preferencias */
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Alineación del texto del nombre de la carpeta */
+.folder p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
